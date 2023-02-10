@@ -6,6 +6,7 @@ import {
     gameComplete,
     gameQuestion,
     generateRandomNumber,
+    generateRandomSign,
 } from '../src/index.js';
 
 // START THE GAME
@@ -18,15 +19,7 @@ let isCompleted = true;
 for (let i = 0; i < attempts; i += 1) {
     const number1 = generateRandomNumber(10, 100);
     const number2 = generateRandomNumber(1, 10);
-    const signNumber = generateRandomNumber(1, 100);
-
-    // define sign
-    let sign = '+';
-    if (signNumber >= 66) {
-        sign = '*';
-    } else if (signNumber >= 33) {
-        sign = '-';
-    }
+    const sign = generateRandomSign();
 
     // define correct answer
     let correct = '0';
