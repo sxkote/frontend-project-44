@@ -6,24 +6,23 @@
 
 ## Games:
 
-### Overview:
-![](/assets/make-publish-link.png)
+### Install Applications:
+![](https://1drv.ms/u/s!AtpIdZwnRKktnKlAAn1iTVpnsoK6LA?e=SNr70Z)
 
 ### Brain-Games
-![](/assets/brain-games.png)
-
+![](https://1drv.ms/u/s!AtpIdZwnRKktnKlGvuLAN88hfK_16w?e=Oe1ZUT)
 
 ### Game-Even
-![](/assets/brain-even.png)
+![](https://1drv.ms/u/s!AtpIdZwnRKktnKlCwt4EyRQqeYdvnQ?e=OaBCt0)
 
 ### Game-Calc
-![](/assets/brain-calc.png)
+![](https://1drv.ms/u/s!AtpIdZwnRKktnKlB80hB3RM5v2eUYA?e=cFlS6M)
 
 ### Game-GCD
-![](/assets/brain-gcd.png)
+![](https://1drv.ms/u/s!AtpIdZwnRKktnKlD0wE_txhZIp-HFg?e=6uxGvl)
 
 ### Game-Progression
-![](/assets/brain-progression.png)
+![](https://1drv.ms/u/s!AtpIdZwnRKktnKlF-dH_x8PCblnJIA?e=gLncHc)
 
 ### Game-Prime
-![](/assets/brain-prime.png)
+![](https://1drv.ms/u/s!AtpIdZwnRKktnKlEzj7pWE5-ZbAocg?e=qRkBcG)

@@ -1,0 +1,38 @@
+import readlineSync from 'readline-sync';
+import greeting from './cli.js';
+
+const playRound = (round) => {
+  // display question
+  console.log(`Question: ${round[0]}`);
+
+  // get answer from console
+  const answer = readlineSync.question('Your answer: ');
+
+  // process the answer
+  if (answer === round[1]) {
+    console.log('Correct!');
+    return true;
+  }
+
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${round[1]}'.`);
+  return false;
+};
+
+const playGame = (description, rounds) => {
+  const username = greeting();
+
+  console.log(description);
+
+  for (let i = 0; i < rounds.length; i += 1) {
+    const isCorrect = playRound(rounds[i]);
+    if (!isCorrect) {
+      console.log(`Let's try again, ${username}!`);
+      return false;
+    }
+  }
+
+  console.log(`Congratulations, ${username}!`);
+  return true;
+};
+
+export default playGame;
