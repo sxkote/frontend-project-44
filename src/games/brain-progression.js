@@ -1,4 +1,5 @@
-import { attempts, generateRandomNumber } from '../index.js';
+import { attempts, generateRandomNumber } from '../utils.js';
+import playGame from '../engine.js';
 
 const progressionLength = 10;
 
@@ -29,4 +30,10 @@ const buildRoundsProgression = (roundsCount = attempts) => {
   return rounds;
 };
 
-export default buildRoundsProgression;
+const playGameProgression = (roundsCount = attempts) => {
+  const rounds = buildRoundsProgression(roundsCount);
+
+  return playGame('What number is missing in the progression?', rounds);
+};
+
+export default playGameProgression;

@@ -11,10 +11,27 @@ Each game has 3 rounds (amount of rounds could be changed by constant: attempts 
 
 To win the game you need to have all correct answers.
 
-## Games:
 
-### Install Applications:
+## Install Applications:
+validate js code with linter:
+
+`make lint`
+
+publish package locally
+
+`make publish`
+
+link package to execute games
+
+`npm link`
+
+
+listing of the installation process:
+
 ![](https://db3pap004files.storage.live.com/y4mo-qovbGxYD_aS5_0rCPsKBGpKboAM4hYnBGJGP9AiEQjg5Fmx9_Wvq8fstoMFC3p6Tvc6gE5A0LEhsYn5gm6HpcOe1EMuCxOvNM6XU3qtchOvWaRudD3bhdWILOxFkT9UwJmwXukosHErtESMphpWnKnKb9ulMNaHhOc67QBS0Va8VwFoGDQ1y0JSL1hPU9R?encodeFailures=1&width=742&height=829)
+
+
+## Games:
 
 ### Brain-Games
 Simple Greeting by Brain-Games:

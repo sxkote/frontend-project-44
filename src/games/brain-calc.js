@@ -1,4 +1,5 @@
-import { attempts, generateRandomNumber } from '../index.js';
+import { attempts, generateRandomNumber } from '../utils.js';
+import playGame from '../engine.js';
 
 const generateRandomSign = () => {
   const signNumber = generateRandomNumber(1, 100);
@@ -42,4 +43,10 @@ const buildRoundsCalc = (roundsCount = attempts) => {
   return rounds;
 };
 
-export default buildRoundsCalc;
+const playGameCalc = (roundsCount = attempts) => {
+  const rounds = buildRoundsCalc(roundsCount);
+
+  return playGame('What is the result of the expression?', rounds);
+};
+
+export default playGameCalc;
