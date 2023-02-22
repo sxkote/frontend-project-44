@@ -1,4 +1,4 @@
-import { attempts, generateRandomNumber } from '../utils.js';
+import { attempts, buildRoundsForNumbers } from '../utils.js';
 import playGame from '../engine.js';
 
 const isPrimeNumber = (number) => {
@@ -11,15 +11,8 @@ const isPrimeNumber = (number) => {
 };
 
 const buildRoundsPrime = (minNumber = 2, maxNumber = 30, roundsCount = attempts) => {
-  const rounds = [];
-
-  for (let i = 0; i < roundsCount; i += 1) {
-    const number = generateRandomNumber(minNumber, maxNumber);
-
-    rounds.push([`${number}`, isPrimeNumber(number) ? 'yes' : 'no']);
-  }
-
-  return rounds;
+  const checkNumberFunction = isPrimeNumber;
+  return buildRoundsForNumbers(checkNumberFunction, minNumber, maxNumber, roundsCount);
 };
 
 const playGamePrime = (roundsCount = attempts) => {
